@@ -1,0 +1,10 @@
+<!-- Category Description for Broadcast Advertising in 2.0-->
+<section>
+	<div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-12">
+            <p>Redeem your gift card by entering the code into the field below. The balance will be attached to your account and will be available during the billing step of the checkout process while a balance remains. </p>
+            <giftcardredemption ng-if="user.Permissions.contains('ViewPromotions') && user.Type != 'TempCustomer'" />
+            <div ng-if="user.Permissions.contains('ViewPromotions') && user.Type == 'TempCustomer'"><a href="admin" style="color:#67CAD9; font-weight: bold;">You must log in to redeem a Gift Card.</a></div>
+	    </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<header class="header navbar navbar-inner desktop-navigation">
+    <nav tolerance='20' offset='200' class="navbar navbar-default" role="navigation" headroom>
+        <section>
+            <div class="container center-content">
+                <ul class="nav navbar-nav pull-left">
+                    <li class="products" ng-class="{'active': isActive('catalog')}">
+                        <a id="451qa_home_link" ng-show="Four51User.isAuthenticated()" href="catalog">
+                            <i class="fa fa-home visible-xs"></i>
+                            <span class="hidden-xs">{{'HOME' | rc | xlat}}</span>
+                        </a>
+                    </li>
+                    <li ng-repeat="t in tree" ng-class="{'active': isInPath('{{t.InteropID}}'),'dropdown': t.SubCategories.length > 0}">  
+                        <a ng-if="t.SubCategories.length > 0" href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">{{t.Name}}<b class="caret"></b></a>
+                        <a ng-if="t.SubCategories.length == 0" href="catalog/{{t.InteropID}}">{{t.Name}}</a>
+                        <ul ng-if="t.SubCategories.length > 0" class="dropdown-menu">
+                            <li><a href="catalog/{{t.InteropID}}">All {{t.Name}}</a></li>
+                            <li ng-repeat="sc in t.SubCategories"><a href="catalog/{{sc.InteropID}}">{{sc.Name}}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <productsearchinput></productsearchinput>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <!--Only Show Mega Nav on Smaller Devices
+    <nav class="dropdown-mega hidden-sm hidden-md hidden-lg">
+        <a class="dropdown-toggle text-center" data-toggle="dropdown">
+            <i class="fa fa-angle-down text-primary"></i>
+        </a>
+        <ul class="451qa_topnav dropdown-menu" >
+            <categorytree tree='tree' current='currentCategory' />
+        </ul>
+    </nav> -->
+</header>

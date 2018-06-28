@@ -1,0 +1,389 @@
+/*
+Static file for Theme changes
+Theme name: My SPA Theme
+Version: 1.0
+Template: Howdy
+*/
+
+.main-wrapper {
+  background-color:#FFFFFF;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.jumbotron {
+  margin:0px;
+  background-color: transparent;
+}
+.jumbotron h2 img {
+  max-height: 100%;
+}
+
+/* Bootstrap assumes "Phone First", so all the above definitions control the view on an extra small device*/
+/* Use Media Queries to change css on elements as the screen grows larger */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*.class {
+    property:value;
+  }*/
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*.class {
+    property:value;
+  }*/
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*.class {
+    property:value;
+  }*/
+}
+
+.header-navigation > div,
+.category-navigation,
+.search-bar .container,
+.contact-us {
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.header-navigation {
+    height: 30px;
+    background-color: #E0DFDE;
+    color: #615D54;
+    position: relative;
+}
+
+.header-navigation ul {
+    text-align:right;
+    float:right;
+}
+
+.header-navigation li {
+    float:left;
+    padding:5px 5px;
+    color: #615D54;
+}
+.center-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar {
+    border: none;
+    min-height: inherit;
+}
+.navbar .container .navbar-nav.pull-left li a,
+.navbar .container-view .navbar-nav.pull-left li a {
+    padding: 20px 10px;
+}
+
+.container .navbar-nav li.active > a {
+    background-color: #F47A35;
+}
+
+.container .navbar-nav li.active > a:hover {
+    background-color: #F47A35;
+}
+.header-navigation a {
+    color:#615D54;
+    text-align:right;
+    font-size:95%;
+}
+
+.header-navigation .badge {
+    background-color:#F47A35;
+    margin-left:3px;
+}
+
+.header-navigation a:hover i {
+    text-decoration:none
+}
+
+.btn-prod-search {
+    color: #45413B;
+    background-color: #45413B;
+}
+
+.branding-logo {
+    height: auto;
+    margin-left: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+    width: 90%;
+}
+
+.logo-holder {
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+}
+
+.branding-div {
+    min-height: 93px;
+    top: 2px;
+}
+
+.navbar-fixed-top {
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+
+.panel-category-list.no-panels {
+    padding-bottom: 120px;
+}
+
+.thumbnail img {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    max-height: 150px;
+}
+
+.product-detail-default .panel {
+    border: 0 none;
+    box-shadow:none;
+    margin-bottom: 0px;
+}
+
+.product-detail-default .panel-heading {
+    display:none;
+}
+
+.product-detail-default .panel-header {
+    border-bottom:1px solid #ddd;
+}
+
+.product-detail-default .panel-body {
+    padding: 15px 0;
+}
+
+.text-info.prod-id {
+	font-size: 12px;color:#aaa
+}
+.btn-success[disabled] {
+	background-color: #f5f5f5;
+	border-color: #dddddd;
+}
+.prodDesc ul {
+    list-style-type: disc;
+    margin: 1em 2em;
+}
+btn.continue {
+    background-color: #5D186A;
+    border: 1px solid #5D186A;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.panel-order .panel-heading {
+    cursor: auto;
+}
+orderbilling .btn-group {
+	margin-top: 15px;
+}
+.continue {
+    margin-top:20px;
+}
+.search .input-group {
+    margin: 0 2px 0 0 !important;
+}
+.additional-buttons {
+    text-align: center;
+}
+.desc.panel-body ul {
+    margin-left: 2em;
+    list-style: disc;
+}
+.desc.panel-body ul li {
+    list-style: outside none disc;
+    margin-bottom: 0.4em;
+}
+.order-cloud-image {
+ background-color: #CCCCCC;   
+}
+.order-cloud .form-signin {
+    background-color: #ffffff;
+}
+.order-cloud .form-signin .btn-primary {
+    background-color: #5D186A;
+    color: #ffffff;
+}
+.order-cloud .form-signin .btn-primary:hover {
+    background-color: #CC3333;
+}
+
+/*lightbox*/
+.modal-body {
+    background: none repeat scroll 0 0;
+    background-color: white !important;
+}
+
+.galleryThumbs {
+    width:100%;
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.galleryThumbs li {
+    padding: 3px 5px;
+    list-style-type: none;
+    display:inline-block;
+}
+
+.galleryThumbs li:first-child {
+    padding-left:0;
+}
+
+.galleryThumbs .img-thumbnail {
+    border:1px solid #ccc;
+    max-width: 64px;
+}
+
+.galleryThumbs .active .img-thumbnail {
+    border:1px solid #5D186A;
+}
+
+.galleryImages li {
+    list-style-type:none;
+}
+
+.galleryImages a {
+    display:block;
+}
+
+.galleryImages a.no-click {
+    cursor:none;
+    pointer-events: none;
+}
+
+.galleryImages .product-image-large {
+    display:none;
+}
+
+.galleryImages .active .product-image-large {
+    display:block !important;
+    max-width: 100%;
+    position:relative;
+    top:0;
+}
+.product-image-large {
+	max-height: none;
+}
+/**/
+.lightbox-nav {
+    position: relative;
+    margin-bottom: 12px; /* the font-size of .btn-xs */
+    text-align: center;
+    font-size: 0; /* prevent the otherwise inherited font-size and line-height from adding extra space to the bottom of this div */
+}
+
+.lightbox-nav .btn-group {
+    vertical-align: top;
+}
+
+.lightbox-nav .close {
+    /* absolutely position this in order to center the nav buttons */
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:1px 5px;
+}
+
+.lightbox-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.lightbox-image-container img {
+    min-width:350px;
+    min-height:350px;
+}
+
+/* the caption overlays the top left corner of the image */
+.lightbox-image-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5em 0.9em; /* the left and right margins are offset by 0.4em for the span box-shadow */
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-image-caption span {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* pad the left and right of each line of text */
+    box-shadow: 0.4em 0 0 rgba(255, 255, 255, 0.75),
+    -0.4em 0 0 rgba(255, 255, 255, 0.75);
+}
+
+section.product-detail-default.ng-scope div.col-collapse.col-md-12 {
+    padding-bottom: 120px;
+}
+
+section.product-detail-default .view-error-message {
+    bottom: 80px;
+}
+
+.container-view {
+    padding-bottom:120px;
+}
+
+.btn.btn-edit {
+    background-color: #67cad9;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn.btn-edit:hover {
+    background-color: #5EBFC9;
+}
+
+.btn-info {
+    border-color: #E0DFDE;
+}
+
+.btn-info:hover {
+    border-color: #CECDCC;
+}
+
+.navbar-fixed-bottom {
+    z-index: 999;
+}
+paymentselector {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.panel-product-list .well {
+    
+    border: none;
+}
+
+.panel-product-list.no-panels .well {
+    border: none;
+}
+
+.fixed-footer-bottom div {
+    margin-bottom: 6px !important;
+    margin-top: 10px !important;
+}
+
+.panel-product-list ul li.inline {
+    min-height: 310px;
+}

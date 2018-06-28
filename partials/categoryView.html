@@ -1,0 +1,16 @@
+<section>
+        <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-10 col-md-offset-1': !navStatus.visible }" >
+
+            <categorylistview></categorylistview>
+            
+            <div ng-if="currentCategory.InteropID == 'ssg-redeem'">
+                <redeemview></redeemview>
+            </div>
+
+            <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}"/>
+
+            <productlistview></productlistview>
+
+        </div>
+    </div>
+</section>
