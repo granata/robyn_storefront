@@ -15,13 +15,17 @@
                     <i class="fa fa-edit"></i>
                 </div>
                 <div>
-                    <label ng-show="address.FirstName || address.IsBilling" ng-class="{required: address.IsBilling && address.IsCustEditable != false}">{{('First' | r) + ' ' + ('Name' | r) | xlat}}</label>
-                    <input name="firstname" class="form-control" type="text" ng-model="address.FirstName" placeholder="{{('First' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="address.IsBilling && address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
+                
+                    <label ng-show="address.FirstName || (address.IsBilling || address.IsShipping)" ng-class="{required: (address.IsBilling || address.IsShipping) && address.IsCustEditable != false}">{{('First' | r) + ' ' + ('Name' | r) | xlat}}</label>
+                  
+                    <input name="firstname" class="form-control" type="text" ng-model="address.FirstName" placeholder="{{('First' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="(address.IsBilling || address.IsShipping) && address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-user"></i>
                 </div>
                 <div>
-                    <label ng-show="address.LastName || address.IsBilling" ng-class="{required: address.IsBilling && address.IsCustEditable != false}">{{('Last' | r) + ' ' + ('Name' | r) | xlat}}</label>
-                    <input name="lastname" class="form-control" type="text" ng-model="address.LastName" placeholder="{{('Last' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="address.IsBilling && address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
+                   
+                    <label ng-show="address.LastName || (address.IsBilling || address.IsShipping)" ng-class="{required: (address.IsBilling || address.IsShipping) && address.IsCustEditable != false}">{{('Last' | r) + ' ' + ('Name' | r) | xlat}}</label>
+                   
+                    <input name="lastname" class="form-control" type="text" ng-model="address.LastName" placeholder="{{('Last' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="(address.IsBilling || address.IsShipping) && address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-user"></i>
                 </div>
                 <div>

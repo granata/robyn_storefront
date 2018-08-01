@@ -36,6 +36,10 @@
                             <li ng-if="cart_shipping.shippingAddress.$invalid">{{'Please choose a ' + ('Shipping' | rl) + ' ' + ('Address' | rl) | xlat}}</li>
                             <li ng-if="cart_shipping.shippingAddressLineItem.$invalid">{{'Please choose a ' + ('Shipping' | rl) + ' ' + ('Address' | rl) | xlat}}</li>
                             <li ng-if="cart_shipping.shipMethod.$invalid">{{'Please choose a ' + ('Shipping' | rl) + ' ' + ('Method' | rl) | xlat}}</li>
+                            <!---->
+                            <li ng-if="cart_shipping.shippingFirstName.$invalid">{{'Please enter a ' + ('Shipping' | rl) + ' ' + ('First Name' | rl) | xlat}}</li>
+                            <li ng-if="cart_shipping.shippingLastName.$invalid">{{'Please enter a ' + ('Shipping' | rl) + ' ' + ('Last Name' | rl) | xlat}}</li>
+                            <!---->
                             <li ng-if="cart_billing.billingAddress.$invalid">{{'Please choose a ' + ('Billing' | rl) + ' ' + ('Address' | rl) | xlat}}</li>
                             <li ng-if="currentOrder.BillingEnabled && cart_billing.billingFirstName.$invalid">{{'Please enter a ' + ('Billing' | rl) + ' ' + ('First Name' | rl) | xlat}}</li>
                             <li ng-if="currentOrder.BillingEnabled && cart_billing.billingLastName.$invalid">{{'Please enter a ' + ('Billing' | rl) + ' ' + ('Last Name' | rl) | xlat}}</li>
